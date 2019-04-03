@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b0eccd8882c5cd4eace018b2f9b9a38, type: 3}
   m_Name: Suspension
   m_EditorClassIdentifier: 
-  Name: Suspension
+  _name: 
   Object: {fileID: 0}
   TimeToBuild: 0
   Machine: 
@@ -20,3 +20,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a5f2b4e981c22794cae65165a855aef3, type: 2}
   - {fileID: 11400000, guid: a5f2b4e981c22794cae65165a855aef3, type: 2}
   - {fileID: 11400000, guid: a5f2b4e981c22794cae65165a855aef3, type: 2}
+  - {fileID: 11400000, guid: 39d3ea4c10d69d649ad221498dd287fd, type: 2}

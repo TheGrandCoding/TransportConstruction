@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "Component")]
+[CreateAssetMenu(fileName = "New Component", menuName = "Component")]
 public class Component : ScriptableObject
 {
     [SerializeField]
@@ -43,7 +43,7 @@ public class Component : ScriptableObject
 
     public int GetNumberFor(Component c)
     { // find number of components *where* they are c
-            return Components.Where(x => x.Name == c.Name).Count();
+        return Components.Where(x => x.Name == c.Name).Count();
     }
 
     private Dictionary<Component, int> _cachedComponents;

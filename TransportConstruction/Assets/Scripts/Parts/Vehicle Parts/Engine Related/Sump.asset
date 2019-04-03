@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6b0eccd8882c5cd4eace018b2f9b9a38, type: 3}
-  m_Name: Drive Shaft
+  m_Name: Sump
   m_EditorClassIdentifier: 
   _name: 
   Object: {fileID: 0}
@@ -18,6 +18,4 @@ MonoBehaviour:
   Machine: 
   Components:
   - {fileID: 11400000, guid: a5f2b4e981c22794cae65165a855aef3, type: 2}
-  - {fileID: 11400000, guid: a5f2b4e981c22794cae65165a855aef3, type: 2}
-  - {fileID: 11400000, guid: a5f2b4e981c22794cae65165a855aef3, type: 2}
-  - {fileID: 11400000, guid: a5f2b4e981c22794cae65165a855aef3, type: 2}
+  - {fileID: 11400000, guid: 39d3ea4c10d69d649ad221498dd287fd, type: 2}

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b0eccd8882c5cd4eace018b2f9b9a38, type: 3}
   m_Name: Metal
   m_EditorClassIdentifier: 
-  Name: Metal
+  _name: Metal
   Object: {fileID: 0}
   TimeToBuild: 0
   Machine: 
