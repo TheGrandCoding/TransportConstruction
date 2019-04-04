@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b0eccd8882c5cd4eace018b2f9b9a38, type: 3}
+  m_Name: Engine V6
+  m_EditorClassIdentifier: 
+  _name: 
+  Object: {fileID: 0}
+  TimeToBuild: 0
+  Machine: 
+  Components:
+  - {fileID: 11400000, guid: 94a97911729b65641952f0585bb6cd9d, type: 2}
+  - {fileID: 11400000, guid: ddad235fdf1cf6e4eb5bc23b40be3daa, type: 2}
+  - {fileID: 11400000, guid: ed59b05bd5e80d844955f8159951e2dd, type: 2}
+  - {fileID: 11400000, guid: 55be31ae85b2a26498813382e00f6616, type: 2}
+  - {fileID: 11400000, guid: 1ee86b176b134454997e032c6ef81f79, type: 2}
+  - {fileID: 11400000, guid: 02ea1d9e1f3fb5b4b85e19a6f142fb2d, type: 2}
+  - {fileID: 11400000, guid: 9479e0b1fa25e1f4ab4b94b65d6734f6, type: 2}
