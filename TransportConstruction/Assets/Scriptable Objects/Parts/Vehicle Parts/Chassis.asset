@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b0eccd8882c5cd4eace018b2f9b9a38, type: 3}
+  m_Name: Chassis
+  m_EditorClassIdentifier: 
+  _name: 
+  Object: {fileID: 0}
+  TimeToBuild: 60
+  Machine: 
+  Components:
+  - {fileID: 11400000, guid: 0e19cda0ac5566549bef58906d3826ca, type: 2}
+  - {fileID: 11400000, guid: 188870a94274a0f41b8cc4d01111019e, type: 2}
+  - {fileID: 11400000, guid: ace2356a5cec72b4ca46bb87c987991d, type: 2}
+  - {fileID: 11400000, guid: ace2356a5cec72b4ca46bb87c987991d, type: 2}
+  - {fileID: 11400000, guid: 461b3fbd3f9b22b458aea475242d4746, type: 2}
+  - {fileID: 11400000, guid: f0f1bbd6cd1b54341bb3bc0f24ff6683, type: 2}
