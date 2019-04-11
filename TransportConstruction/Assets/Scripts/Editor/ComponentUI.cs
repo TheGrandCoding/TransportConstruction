@@ -4,14 +4,14 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
-[CustomEditor(typeof(Component))]
+[CustomEditor(typeof(ComponentSO))]
 public class ComponentUI : Editor
 {
     static bool showRequiredObjects = false;
     public override void OnInspectorGUI()
     {
         DrawDefaultInspector();
-        var script = (Component)target;
+        var script = (ComponentSO)target;
         //Debug.Log("Doing for: " + script.Name);
         //GUILayout.TextField("Name", script.Name);
         if (GUILayout.Button("Log Base Components Needed"))

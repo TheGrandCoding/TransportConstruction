@@ -1,13 +1,13 @@
 fileFormatVersion: 2
 guid: b6a1654f48a043842aeb6866ff529808
+timeCreated: 1554986083
+licenseType: Free
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences:
-  - armBase: {fileID: 100000, guid: 7629c9b2ee2974f4f89a4b0539c58783, type: 3}
-  - belt: {fileID: 5456814441387784161, guid: 3df75f55d42fb6940a1da496378e5779, type: 3}
-  - station: {fileID: 8057498124175125630, guid: c3ce6f1b2dd71e8428e4a4d3888d943b,
-      type: 3}
+  - armBase: {instanceID: 0}
+  - belt: {fileID: 5456814441387784161, guid: 3df75f55d42fb6940a1da496378e5779, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

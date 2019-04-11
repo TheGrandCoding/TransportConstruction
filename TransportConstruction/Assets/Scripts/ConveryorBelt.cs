@@ -4,18 +4,16 @@ using UnityEngine;
 
 public class ConveryorBelt : MonoBehaviour
 {
-    public GameObject belt;
     public Transform endpoint;
     public float speed = 1f;
 
     private void Start()
     {
-        belt = this.gameObject;
         endpoint = transform.Find("Endpoint");
     }
 
-    private void OnTriggerStay(Collider other)
+    private void OnTriggerStay(Collider _other)
     {
-        other.transform.position = Vector3.MoveTowards(other.transform.position, endpoint.position, speed * Time.deltaTime);
+        _other.transform.position = Vector3.MoveTowards(_other.transform.position, endpoint.position, speed * Time.deltaTime);
     }
 }

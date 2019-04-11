@@ -4,7 +4,7 @@ using System.Linq;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "New Component", menuName = "Component")]
-public class Component : ScriptableObject
+public class ComponentSO : ScriptableObject
 {
     [SerializeField]
     private string _name;
@@ -13,7 +13,8 @@ public class Component : ScriptableObject
     /// </summary>
     [SerializeField]
     public string Name
-    {  get
+    {
+        get
         {
             if(string.IsNullOrWhiteSpace(_name))
             {
@@ -21,7 +22,8 @@ public class Component : ScriptableObject
                 _name = this.name;
             }
             return _name;
-        }  set { _name = value; } }
+        }   set { _name = value; }
+    }
     /// <summary>
     /// Model of the Component
     /// </summary>
@@ -38,20 +40,20 @@ public class Component : ScriptableObject
     /// <summary>
     /// Things needed to build this
     /// </summary>
-    public List<Component> Components = new List<Component>();
+    public List<ComponentSO> Components = new List<ComponentSO>();
 
 
-    public int GetNumberFor(Component c)
+    public int GetNumberFor(ComponentSO c)
     { // find number of components *where* they are c
         return Components.Where(x => x.Name == c.Name).Count();
     }
 
-    private Dictionary<Component, int> _cachedComponents;
-    public Dictionary<Component, int> GetAllComponents()
+    private Dictionary<ComponentSO, int> _cachedComponents;
+    public Dictionary<ComponentSO, int> GetAllComponents()
     {
         if(_cachedComponents == null)
         {
-            _cachedComponents = new Dictionary<Component, int>();
+            _cachedComponents = new Dictionary<ComponentSO, int>();
             foreach(var c in Components)
             {
                 if (_cachedComponents.ContainsKey(c))
@@ -79,12 +81,12 @@ public class Component : ScriptableObject
     /// Finds the list of base components that it needs to make this
     /// 'Base Component' is one that doesnt need anything to make it
     /// </summary>
-    public Dictionary<Component, int> GetTotalBaseComponents()
+    public Dictionary<ComponentSO, int> GetTotalBaseComponents()
     {
         if (this.Components.Count == 0)
-            return new Dictionary<Component, int>() { { this, 1 } };
+            return new Dictionary<ComponentSO, int>() { { this, 1 } };
 
-        var dict = new Dictionary<Component, int>();
+        var dict = new Dictionary<ComponentSO, int>();
         foreach(var c in Components)
         {
             var componentDict = c.GetTotalBaseComponents();
